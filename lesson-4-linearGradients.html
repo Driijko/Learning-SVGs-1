@@ -1,0 +1,33 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Learning SVGs</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      #example {
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+
+    <svg id="example" width="500" height="500" >
+      <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="90%" y2="0%">
+          <stop offset="0%" stop-color="red" stop-opacity="1" />
+          <stop offset="100" stop-color="blue" stop-opacity="1" />
+        </linearGradient>
+      </defs>
+
+      <path stroke="blue" stroke-linecap="round" fill="url(#grad)" stroke-width="10" d="
+      M 0 0
+      C 500 500, 00 00, 300 10
+      S 100 0, 300 300
+      S 0 500, -10 350
+    " />
+    <svg/>
+
+  </body>
+</html>
